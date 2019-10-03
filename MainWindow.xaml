@@ -1,0 +1,14 @@
+﻿<Window x:Class="Windows_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windows_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="TrackEvent" Click="Sample_Click" Content="Track Event" FontSize="48" Background="LightBlue" Margin="10,10,444,330"  />
+        <Button x:Name="TrackException" Click="TrackException_Click" Content="Track Exception" FontSize="48" Background="Green" Margin="353,10,101,330" RenderTransformOrigin="0.297,3.567"  />
+        <Button x:Name="ThrowException" Click="ThrowException_Click" Content="Throw Exception" FontSize="48" Background="Green" Margin="10,94,444,246" RenderTransformOrigin="0.297,3.567"  />
+    </Grid>
+</Window>
