@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="TrackEvent" Click="Sample_Click" Content="Track Event" FontSize="48" Background="LightBlue" Margin="10,10,444,330"  />
-        <Button x:Name="TrackException" Click="TrackException_Click" Content="Track Exception" FontSize="48" Background="Green" Margin="353,10,101,330" RenderTransformOrigin="0.297,3.567"  />
-        <Button x:Name="ThrowException" Click="ThrowException_Click" Content="Throw Exception" FontSize="48" Background="Green" Margin="10,94,444,246" RenderTransformOrigin="0.297,3.567"  />
+        <Button x:Name="SendError" Click="SendError_Click" Content="Send Error" FontSize="48" Background="LightBlue" Margin="10,50,386,290"  />
+        <Button x:Name="TrackEvent" Click="Sample_Click" Content="Track Event" FontSize="48" Background="LightBlue" Margin="10,136,386,204"  />
+        <Button x:Name="TrackException" Click="TrackException_Click" Content="Track Exception" FontSize="48" Background="Green" Margin="10,222,386,118" RenderTransformOrigin="0.297,3.567"  />
+        <Button x:Name="ThrowException" Click="ThrowException_Click" Content="Throw Exception" FontSize="48" Background="Green" Margin="10,308,386,31" RenderTransformOrigin="0.297,3.567"  />
     </Grid>
 </Window>

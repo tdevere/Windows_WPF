@@ -21,6 +21,7 @@ namespace Windows_WPF
     public partial class App : Application
     {
         public static int counter = 0;
+        
 
         protected override void OnStartup(StartupEventArgs e)
         {
@@ -35,18 +36,18 @@ namespace Windows_WPF
 
             Crashes.GetErrorAttachments = (ErrorReport report) =>
             {
-                string file1 = @"C:\Users\tdevere\source\repos\Windows_WPF\File_One.txt";
-                string file2 = @"C:\Users\tdevere\source\repos\Windows_WPF\File_Two.txt";
-                StringBuilder crashdata = new StringBuilder("Crash Report");
-                crashdata.AppendLine(System.Environment.NewLine);
-                crashdata.AppendLine($"File ONE: {DateTime.Now.ToLongTimeString()}");
-                crashdata.AppendLine(File.ReadAllText(file1));
-                crashdata.AppendLine($"File TWO: {DateTime.Now.ToLongTimeString()}");
-                crashdata.AppendLine(File.ReadAllText(file2));
+                //string file1 = @"C:\Users\tdevere\source\repos\Windows_WPF\File_One.txt";
+                //string file2 = @"C:\Users\tdevere\source\repos\Windows_WPF\File_Two.txt";
+                //StringBuilder crashdata = new StringBuilder("Crash Report");
+                //crashdata.AppendLine(System.Environment.NewLine);
+                //crashdata.AppendLine($"File ONE: {DateTime.Now.ToLongTimeString()}");
+                //crashdata.AppendLine(File.ReadAllText(file1));
+                //crashdata.AppendLine($"File TWO: {DateTime.Now.ToLongTimeString()}");
+                //crashdata.AppendLine(File.ReadAllText(file2));
 
                 return new ErrorAttachmentLog[]
                {
-                    ErrorAttachmentLog.AttachmentWithText(crashdata.ToString(), $"CrashData at {DateTime.Now.ToLongTimeString()}"),
+                    //ErrorAttachmentLog.AttachmentWithText(crashdata.ToString(), $"CrashData at {DateTime.Now.ToLongTimeString()}"),
                     //ErrorAttachmentLog.AttachmentWithBinary(Encoding.UTF8.GetBytes("Fake image"), $"fake_image_Ticks {DateTime.Now.Ticks.ToString()}.jpeg", "image/jpeg")
                };
 
