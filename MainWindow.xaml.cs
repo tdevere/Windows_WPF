@@ -30,6 +30,13 @@ namespace Windows_WPF
             InitializeComponent();
             SessionTracker = Guid.NewGuid();
         }
+        
+        // Unsafe method: takes pointer to int.
+        unsafe static void SquarePtrParam(int* p)
+        {
+            *p *= *p;
+        }
+
         private void Sample_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.AppCenter.Analytics.Analytics.TrackEvent($"Sample_Click Count {App.counter.ToString()} at {DateTime.Now.ToLongTimeString()}");
